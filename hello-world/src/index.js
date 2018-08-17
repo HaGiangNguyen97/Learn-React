@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import HelloWorld from "./mainConcepts/HelloWorld";
 import registerServiceWorker from "./registerServiceWorker";
 
 function formatName(user) {
@@ -19,7 +18,7 @@ function getGreetingUser(user) {
     );
   } else return <h1>Hello, Stranger</h1>;
 }
-//function phai co return
+// //function phai co return
 
 const user = {
   firstName: "Nguyen",
@@ -51,20 +50,27 @@ const element7 = {
   }
 };
 
-//tronf element2 phai de khai bao user len truoc
-ReactDOM.render(
-  <div>
-    {element}
-    <HelloWorld />
-    {element1}
-    {element2}
-    {element3}
-    {element4}
-    {element5}
-    {element6}
-    {console.log(element6)}
-    {console.log(element7)}
-  </div>,
-  document.getElementById("root")
-);
+//trong element2 phai de khai bao user len truoc
+
+function tick() {
+  const Action = (
+    <div>
+      {/* {element}
+      <HelloWorld />
+      {element1}
+      {element2}
+      {element3}
+      {element4}
+      {element5}
+      {element6}
+      {console.log(element6)}
+      {console.log(element7)} */}
+
+      <App />
+      <h2>It is {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  ReactDOM.render(Action, document.getElementById("root"));
+}
+setInterval(tick, 1000);
 registerServiceWorker();
