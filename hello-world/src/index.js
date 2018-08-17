@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
-
+import Chapter5 from "./mainConcepts/Chapter5";
 function formatName(user) {
   return user.firstName + "  " + user.lastName;
 }
@@ -52,25 +52,41 @@ const element7 = {
 
 //trong element2 phai de khai bao user len truoc
 
-function tick() {
-  const Action = (
-    <div>
-      {/* {element}
-      <HelloWorld />
-      {element1}
-      {element2}
-      {element3}
-      {element4}
-      {element5}
-      {element6}
-      {console.log(element6)}
-      {console.log(element7)} */}
+//CHAPTER 5
+// function Clock(props) {
+//   return (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {props.date.toLocaleTimeString()}</h2>
+//     </div>
+//   );
+// }
 
-      <App />
-      <h2>It is {new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
-  ReactDOM.render(Action, document.getElementById("root"));
+function tick(props) {
+  ReactDOM.render(<App />, document.getElementById("root"));
 }
 setInterval(tick, 1000);
 registerServiceWorker();
+
+// function tick() {
+//   const Action = (
+//     <div>
+//       {/* {element}
+//       <HelloWorld />
+//       {element1}
+//       {element2}
+//       {element3}
+//       {element4}
+//       {element5}
+//       {element6}
+//       {console.log(element6)}
+//       {console.log(element7)} */}
+
+//       <App />
+//       <h2>It is {new Date().toLocaleTimeString()}</h2>
+//     </div>
+//   );
+//   ReactDOM.render(Action, document.getElementById("root"));
+// }
+// setInterval(tick, 1000);
+// registerServiceWorker();
