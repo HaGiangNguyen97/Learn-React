@@ -7,6 +7,7 @@ import Chapter7Inline from './mainConcepts/Chapter7Inline';
 import Chapter8 from './mainConcepts/Chapter8';
 import Chapter9 from './mainConcepts/Chapter9';
 import Chapter10 from './mainConcepts/Chapter10';
+import Chapter11 from './mainConcepts/Chapter11';
 
 class App extends Component {
 	render() {
@@ -56,6 +57,12 @@ class App extends Component {
 						Chapter 10
 					</p>
 					<Chapter10 />
+				</div>
+				<div>
+					<p className="bg-lightest-blue pa2 w-20 tc pointer bb b--silver hover-bg-light-blue hover-b--mid-gray">
+						Chapter 11
+					</p>
+					<Chapter11 />
 				</div>
 			</div>
 		);
