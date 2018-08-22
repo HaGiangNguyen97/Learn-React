@@ -57,12 +57,12 @@ class Chapter11 extends React.Component {
 		return (
 			<div className="overflow-hidden">
 				<WelcomeDialog />
-				<App /><Dialog title="Mars Exploration Program" message="How should we refer to you?">
-				<input value={this.state.login} onChange={this.handleChange} />
-				<button onClick={this.handleSignUp}>Sign me up !</button>
-			</Dialog>
+				<App />
+				<Dialog title="Mars Exploration Program" message="How should we refer to you?">
+					<input value={this.state.login} onChange={this.handleChange} />
+					<button onClick={this.handleSignUp}>Sign me up !</button>
+				</Dialog>
 			</div>
-			
 		);
 	}
 }
